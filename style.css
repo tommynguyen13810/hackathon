@@ -1,0 +1,75 @@
+body {
+    background-color: #60a9ff;
+}
+
+img:hover {
+    border-style: double;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+
+.topbar {
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 12px 25px;
+}
+
+.topbar a{
+    font-size: 30px;
+    text-decoration: none;
+    color: palegoldenrod;
+}
+
+.centerpicture img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+}
+
+.centerpicture img:hover {
+    border: 1px solid #d0d0d0;
+}
+
+.searchbar input{
+    transition: background-color .5s;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.searchbar input:hover {
+    background-color: powderblue;
+}
+
+.spinner {
+    position: relative;
+    width: 10px;
+    animation: spin 2s infinite linear;
+}
+
+.faller {
+    position: relative;
+    width: 10px;
+    animation: fall 10s infinite;
+}
+
+
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg);
+    } 
+}
+
+@keyframes fall {
+    100% {
+        transform: translateY(500px);
+    }
+}
